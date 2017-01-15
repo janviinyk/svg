@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/favicon.png"  />
+<title>Title</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/jquery-ui-1.10.4.css" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="css/sk-social-font.css" rel="stylesheet" type="text/css" />
+<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<script src="js/jquery-1.10.2.js"></script>
+<!-- end -->
+<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<script src="js/jquery-ui-1.10.4.min.js"></script>
+<!-- end -->
+<script src="js/java.js"></script>
+<script src="js/modernizr.js"></script>
+<!--[if lt IE 9]>
+		   <script>
+		      document.createElement('header');
+		      document.createElement('nav');
+		      document.createElement('section');
+		      document.createElement('article');
+		      document.createElement('aside');
+		      document.createElement('footer');
+		      document.createElement('figure');
+		   </script>
+<![endif]-->
+</head>
+<body>
+<!--[if lt IE 10]>
+<p>You are using an <strong>outdated</stron> browser. 
+Please <a href="http://windows.microsoft.com/en-IN/internet-explorer/download-ie">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>SVGs</h1>
+        <!-- Header -->
+        Steps:
+
+        1) Export Files from Sketch as SVG.
+
+        <h4>Basic Implementations to include SVG</h4>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="list-unstyled svg-list">
+                        <li>
+                            <h5>Img</h5>
+                            <pre><code>&lt;img src="images/emoji-neutral.svg" alt="Neutral Emoji" height="65" width="68"&gt;</code>
+                            </pre>
+                            <img src="images/emoji-neutral.svg" alt="emoji-neutral"  class="" />
+                        </li>
+
+                        <li>
+                            <h5>Background-image</h5>
+                            <pre><code>.logo {
+  background-image: url(images/emoji-neutral.svg);
+}</code></pre>
+							<div class="emoji-bg"></div>
+                        </li>
+
+                        <li>
+                            <h5>Object</h5>
+                            <pre><code>&lt;object type="image/svg+xml" data="images/emoji-neutral.svg"&gt;Your browser does not support SVGs&lt;/object&gt;</code></pre>
+							<object type="image/svg+xml" data="images/emoji-neutral.svg">Your browser does not support SVGs</object>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6">
+                    <ul class="list-unstyled svg-list1">
+                        <li>
+                            <h5>IFrame</h5>
+                            <pre><code>&lt;iframe src="images/emoji-neutral.svg"&gt;Your browser does not support iframes&lt;/iframe&gt;</code></pre>
+							<iframe src="images/emoji-neutral.svg">Your browser does not support iframes</iframe>
+                        </li>
+
+                        <li>
+                            <h5>Embed</h5>
+                            <pre><code>&lt;iframe src="images/emoji-neutral.svg"&gt;Your browser does not support iframes&lt;/iframe&gt;</code></pre>
+							<iframe src="images/emoji-neutral.svg">Your browser does not support iframes</iframe>
+                        </li>
+                        
+						<li>
+                            <h5>Inline</h5>
+                            <pre><code>&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 65"&gt;
+  
+	&lt;path d="M305,212.999275 C305,210.790536 306.786795,209 308.999275,209 L331.000725,209 C333.209464,209 335,210.786795 335,212.999275 L335,235.000725 C335,237.209464 333.213205,239 331.000725,239 L308.999275,239 C306.790536,239 305,237.213205 305,235.000725 L305,212.999275 Z M313.587894,222.852807 C314.729,222.852807 315.654049,221.927758 315.654049,220.786652 C315.654049,219.645546 314.729,218.720497 313.587894,218.720497 C312.446788,218.720497 311.521739,219.645546 311.521739,220.786652 C311.521739,221.927758 312.446788,222.852807 313.587894,222.852807 Z M324.968396,222.246241 C324.691831,221.921529 324.181949,221.922642 323.906522,222.248465 L323.332904,222.930137 C323.009676,223.314898 322.407605,223.31601 322.080962,222.933473 L320.006152,220.498136 C319.627155,220.052214 318.924929,220.053326 318.54707,220.502584 L313.112502,226.955672 C312.769926,227.363785 313.065839,227.977624 313.606451,227.978736 L328.757229,227.994304 C329.197685,227.994304 329.43783,227.493892 329.156712,227.163621 L324.968396,222.246241 Z" id="Printable-White-Copy"&gt; &lt;/path&gt;
+&lt;/svg&gt;</code></pre>
+							<svg xmlns="http://www.w3.org/2000/svg">
+								<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        							<g id="sprite" transform="translate(-305.000000, -209.000000)" fill="#524E64">
+										<path d="M305,212.999275 C305,210.790536 306.786795,209 308.999275,209 L331.000725,209 C333.209464,209 335,210.786795 335,212.999275 L335,235.000725 C335,237.209464 333.213205,239 331.000725,239 L308.999275,239 C306.790536,239 305,237.213205 305,235.000725 L305,212.999275 Z M313.587894,222.852807 C314.729,222.852807 315.654049,221.927758 315.654049,220.786652 C315.654049,219.645546 314.729,218.720497 313.587894,218.720497 C312.446788,218.720497 311.521739,219.645546 311.521739,220.786652 C311.521739,221.927758 312.446788,222.852807 313.587894,222.852807 Z M324.968396,222.246241 C324.691831,221.921529 324.181949,221.922642 323.906522,222.248465 L323.332904,222.930137 C323.009676,223.314898 322.407605,223.31601 322.080962,222.933473 L320.006152,220.498136 C319.627155,220.052214 318.924929,220.053326 318.54707,220.502584 L313.112502,226.955672 C312.769926,227.363785 313.065839,227.977624 313.606451,227.978736 L328.757229,227.994304 C329.197685,227.994304 329.43783,227.493892 329.156712,227.163621 L324.968396,222.246241 Z" id="Printable-White-Copy"></path>
+									</g>
+								</g>
+							</svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            The SVGs can also be implemented using <code><symbol></symbol></code> and <code><use></use></code> tags.
+            <div class="symbol-use">
+            	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  
+				  <symbol id="icon-1" viewBox="0 0 48 48">
+				    <!-- <path>s and whatever other shapes in here -->  
+				    <path d="M28.8,19.2 C28.8,16.548 30.948,14.4 33.6,14.4 C36.252,14.4 38.4,16.548 38.4,19.2 C38.4,21.852 36.252,24 33.6,24 C30.948,24 28.8,21.852 28.8,19.2 M9.6,19.2 C9.6,16.548 11.748,14.4 14.4,14.4 C17.052,14.4 19.2,16.548 19.2,19.2 C19.2,21.852 17.052,24 14.4,24 C11.748,24 9.6,21.852 9.6,19.2 M38.4,32.196 C38.4,33.5208 37.3248,34.596 36,34.596 L12,34.596 C10.6752,34.596 9.6,33.5208 9.6,32.196 C9.6,30.8712 10.6752,29.796 12,29.796 L36,29.796 C37.3248,29.796 38.4,30.8712 38.4,32.196 M24,43.2 C13.4136,43.2 4.8,34.5864 4.8,24 C4.8,13.4136 13.4136,4.8 24,4.8 C34.5864,4.8 43.2,13.4136 43.2,24 C43.2,34.5864 34.5864,43.2 24,43.2 M24,0 C10.7448,0 0,10.7448 0,24 C0,37.2552 10.7448,48 24,48 C37.2552,48 48,37.2552 48,24 C48,10.7448 37.2552,0 24,0" id="emoji_neutral_circle-[#553]"></path>
+				  </symbol>
+				  
+				  <symbol id="icon-2" viewBox="0 0 22 21">
+				    <!-- <path>s and whatever other shapes in here -->  
+				    <path d="M389.5,8.99936922 C389.5,6.79057859 391.290448,5 393.499369,5 L406.500631,5 C408.709421,5 410.5,6.79044819 410.5,8.99936922 L410.5,22.0006308 C410.5,24.2094214 408.709552,26 406.500631,26 L393.499369,26 C391.290579,26 389.5,24.2095518 389.5,22.0006308 L389.5,8.99936922 Z M398.894088,19.6856589 L396.764847,20.8006616 C396.216366,21.0878802 396.218237,21.0892392 396.323109,20.4801994 L396.729046,18.122716 C396.857823,17.3748422 396.557423,16.4536321 396.012184,15.9242465 L394.292605,14.2546675 C393.847527,13.8225314 393.845702,13.8281657 394.458747,13.7394356 L396.83931,13.3948808 C397.590887,13.2861 398.377859,12.71611 398.714027,12.0376405 L399.776785,9.89273122 C399.913201,9.61740981 399.980945,9.47870141 400.050321,9.47650314 C400.119697,9.47430486 400.188525,9.61304756 400.327102,9.89273122 L401.389861,12.0376405 C401.726647,12.717359 402.512225,13.2859878 403.264578,13.3948808 L405.645141,13.7394356 C406.257408,13.8280531 406.255796,13.82308 405.811283,14.2546675 L404.091704,15.9242465 C403.547025,16.4530879 403.246301,17.3762154 403.374842,18.122716 L403.780779,20.4801994 C403.885637,21.0891629 403.887453,21.0878445 403.339041,20.8006616 L401.2098,19.6856589 C400.53718,19.3334334 399.566891,19.3333372 398.894088,19.6856589 Z" id="Inspire"></path>
+				  </symbol>
+				  
+				  <symbol id="icon-3" viewBox="0 0 30 30">
+				  	<path d="M305,212.999275 C305,210.790536 306.786795,209 308.999275,209 L331.000725,209 C333.209464,209 335,210.786795 335,212.999275 L335,235.000725 C335,237.209464 333.213205,239 331.000725,239 L308.999275,239 C306.790536,239 305,237.213205 305,235.000725 L305,212.999275 Z M313.587894,222.852807 C314.729,222.852807 315.654049,221.927758 315.654049,220.786652 C315.654049,219.645546 314.729,218.720497 313.587894,218.720497 C312.446788,218.720497 311.521739,219.645546 311.521739,220.786652 C311.521739,221.927758 312.446788,222.852807 313.587894,222.852807 Z M324.968396,222.246241 C324.691831,221.921529 324.181949,221.922642 323.906522,222.248465 L323.332904,222.930137 C323.009676,223.314898 322.407605,223.31601 322.080962,222.933473 L320.006152,220.498136 C319.627155,220.052214 318.924929,220.053326 318.54707,220.502584 L313.112502,226.955672 C312.769926,227.363785 313.065839,227.977624 313.606451,227.978736 L328.757229,227.994304 C329.197685,227.994304 329.43783,227.493892 329.156712,227.163621 L324.968396,222.246241 Z" id="Printable-White-Copy"></path>
+				  </symbol>
+				</svg>
+
+				<svg class="icon">
+				  <use xlink:href="#icon-1" />
+				</svg>
+
+				<svg class="icon">
+				  <use xlink:href="#icon-2" />
+				</svg>
+
+				<svg class="icon">
+				  <use xlink:href="#icon-3" />
+				</svg>
+
+            </div>
+		</div>
+	</div>
+
+
+        
+</div>
+<!-- Bootstrap -->
+<script src="js/bootstrap.js"></script>
+<!-- Bootstrap -->
+</body>
+</html>
