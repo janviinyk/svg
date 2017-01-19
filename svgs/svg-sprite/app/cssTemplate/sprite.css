@@ -1,0 +1,30 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /*position: relative;*/
+  top: 1px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  /*.ie7-restore-right-whitespace();*/
+  vertical-align: middle;
+  background-image: url('sprite.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+{{#shapes}}
+  {{#first}}
+    .icon-sp {
+      background-image: url('/{{{sprite}}}');
+    }
+  {{/first}}
+
+  .icon-sp--{{base}} {
+    width: 32px;
+    height: 32px;
+    background-position: {{position.relative.xy}};
+  }
+{{/shapes}}
